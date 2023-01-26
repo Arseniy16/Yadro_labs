@@ -56,7 +56,7 @@ module tb_top_fifo();
             // if (err_write == 1) status <= {1'b0, {7{1'b1}}};
             
             #(delay) 
-            read <= ~ read;
+            read <= ~read;
 
             #(delay + 3)
             write <= ~write;
