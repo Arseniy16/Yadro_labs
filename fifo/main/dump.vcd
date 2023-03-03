@@ -1,0 +1,657 @@
+$date
+	Fri Mar  3 11:19:51 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_apb_slave $end
+$var wire 1 ! write $end
+$var wire 1 " read $end
+$var wire 32 # data_write [31:0] $end
+$var wire 1 $ PSLVERR $end
+$var wire 1 % PREADY $end
+$var wire 32 & PRDATA [31:0] $end
+$var reg 32 ' PADDR [31:0] $end
+$var reg 1 ( PENABLE $end
+$var reg 1 ) PRESET $end
+$var reg 1 * PSEL $end
+$var reg 32 + PWDATA [31:0] $end
+$var reg 1 , PWRITE $end
+$var reg 1 - clk $end
+$var reg 32 . data_read [31:0] $end
+$var reg 1 / empty $end
+$var reg 1 0 full $end
+$var integer 32 1 cnt_test [31:0] $end
+$var integer 32 2 num_test [31:0] $end
+$scope function verify $end
+$var integer 32 3 cnt_test [31:0] $end
+$var integer 32 4 iter [31:0] $end
+$var integer 32 5 num_test [31:0] $end
+$upscope $end
+$scope module apb_slave_inst $end
+$var wire 32 6 PADDR [31:0] $end
+$var wire 1 - PCLK $end
+$var wire 1 ( PENABLE $end
+$var wire 32 7 PRDATA [31:0] $end
+$var wire 1 % PREADY $end
+$var wire 1 ) PRESET $end
+$var wire 1 * PSEL $end
+$var wire 1 $ PSLVERR $end
+$var wire 32 8 PWDATA [31:0] $end
+$var wire 1 , PWRITE $end
+$var wire 32 9 data_read [31:0] $end
+$var wire 32 : data_write [31:0] $end
+$var wire 1 / empty $end
+$var wire 1 0 full $end
+$var wire 1 " read $end
+$var wire 1 ! write $end
+$upscope $end
+$scope begin $unm_blk_16 $end
+$upscope $end
+$scope task err_read_test $end
+$var integer 32 ; num_test [31:0] $end
+$upscope $end
+$scope task err_write_test $end
+$var integer 32 < num_test [31:0] $end
+$upscope $end
+$scope task init $end
+$var integer 32 = delay_rst [31:0] $end
+$upscope $end
+$scope task read_block $end
+$var reg 32 > value_read [31:0] $end
+$var integer 32 ? CNT_CLK1 [31:0] $end
+$var integer 32 @ CNT_CLK2 [31:0] $end
+$upscope $end
+$scope task read_test $end
+$var integer 32 A iter [31:0] $end
+$var integer 32 B num_test [31:0] $end
+$scope begin $ivl_for_loop1 $end
+$var integer 32 C i [31:0] $end
+$upscope $end
+$upscope $end
+$scope task reset_param $end
+$upscope $end
+$scope task write_block $end
+$var reg 32 D pwdata [31:0] $end
+$var integer 32 E CNT_CLK1 [31:0] $end
+$var integer 32 F CNT_CLK2 [31:0] $end
+$upscope $end
+$scope task write_test $end
+$var integer 32 G iter [31:0] $end
+$var integer 32 H num_test [31:0] $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 I i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module top_module $end
+$var wire 32 J PADDR [31:0] $end
+$var wire 1 K PCLK $end
+$var wire 1 L PENABLE $end
+$var wire 1 M PRESET $end
+$var wire 1 N PSEL $end
+$var wire 32 O PWDATA [31:0] $end
+$var wire 1 P PWRITE $end
+$var wire 1 Q write $end
+$var wire 1 R read $end
+$var wire 1 S full $end
+$var wire 1 T empty $end
+$var wire 32 U data_write [31:0] $end
+$var wire 32 V data_read [31:0] $end
+$var wire 1 W PSLVERR $end
+$var wire 1 X PREADY $end
+$var wire 32 Y PRDATA [31:0] $end
+$scope module apb_slave_inst $end
+$var wire 32 Z PADDR [31:0] $end
+$var wire 1 K PCLK $end
+$var wire 1 L PENABLE $end
+$var wire 32 [ PRDATA [31:0] $end
+$var wire 1 X PREADY $end
+$var wire 1 M PRESET $end
+$var wire 1 N PSEL $end
+$var wire 1 W PSLVERR $end
+$var wire 32 \ PWDATA [31:0] $end
+$var wire 1 P PWRITE $end
+$var wire 32 ] data_write [31:0] $end
+$var wire 1 R read $end
+$var wire 1 Q write $end
+$var wire 1 S full $end
+$var wire 1 T empty $end
+$var wire 32 ^ data_read [31:0] $end
+$upscope $end
+$scope module top_fifo_inst $end
+$var wire 1 K clk $end
+$var wire 32 _ data_read [31:0] $end
+$var wire 32 ` data_write [31:0] $end
+$var wire 1 a err_read $end
+$var wire 1 b err_write $end
+$var wire 1 R read $end
+$var wire 1 M reset $end
+$var wire 1 Q write $end
+$var wire 1 S full $end
+$var wire 1 T empty $end
+$var reg 8 c cnt_read [7:0] $end
+$var reg 8 d cnt_write [7:0] $end
+$var reg 8 e status [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx e
+bx d
+bx c
+xb
+xa
+bz `
+bx _
+bx ^
+bz ]
+bz \
+bx [
+bz Z
+bx Y
+xX
+xW
+bx V
+bz U
+xT
+xS
+xR
+xQ
+zP
+bz O
+zN
+zM
+zL
+zK
+bz J
+b0 I
+b0 H
+b0 G
+b0 F
+b0 E
+bx D
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+bx >
+b1010 =
+b0 <
+b0 ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+00
+0/
+bx .
+0-
+x,
+bx +
+0*
+0)
+0(
+bx '
+bx &
+0%
+0$
+bx #
+0"
+0!
+$end
+#2000
+1-
+#4000
+0-
+#6000
+1-
+#8000
+0-
+#10000
+1)
+1-
+#12000
+0-
+#14000
+1-
+#16000
+0-
+#18000
+1-
+#20000
+b0 #
+b0 :
+b0 +
+b0 8
+1*
+1,
+b1 '
+b1 6
+0-
+b1 F
+b1 E
+b0 D
+b101 G
+#22000
+1!
+1%
+1(
+1-
+#24000
+0-
+#26000
+0!
+0%
+0*
+0(
+b1 1
+1-
+#28000
+0-
+#30000
+b1 #
+b1 :
+b1 +
+b1 8
+1*
+b1 D
+b1 I
+1-
+#32000
+0-
+#34000
+1!
+1%
+1(
+1-
+#36000
+0-
+#38000
+0!
+0%
+0*
+0(
+b10 1
+1-
+#40000
+0-
+#42000
+b10 #
+b10 :
+b10 +
+b10 8
+1*
+b10 D
+b10 I
+1-
+#44000
+0-
+#46000
+1!
+1%
+1(
+1-
+#48000
+0-
+#50000
+0!
+0%
+0*
+0(
+b11 1
+1-
+#52000
+0-
+#54000
+b11 #
+b11 :
+b11 +
+b11 8
+1*
+b11 D
+b11 I
+1-
+#56000
+0-
+#58000
+1!
+1%
+1(
+1-
+#60000
+0-
+#62000
+0!
+0%
+0*
+0(
+b100 1
+1-
+#64000
+0-
+#66000
+b100 #
+b100 :
+b100 +
+b100 8
+1*
+b100 D
+b100 I
+1-
+#68000
+0-
+#70000
+1!
+1%
+1(
+1-
+#72000
+0-
+#74000
+0!
+0%
+0*
+0(
+b101 1
+1-
+#76000
+0-
+#78000
+b1 2
+b1 H
+b1 5
+b101 4
+b101 3
+b101 I
+1-
+#80000
+0-
+#82000
+1-
+#84000
+0-
+#86000
+1-
+#88000
+1*
+0,
+b0 &
+b0 7
+b0 .
+b0 9
+b10 '
+b10 6
+0-
+b1 @
+b1 ?
+b0 >
+b0 1
+b1 B
+b101 A
+#90000
+1"
+1%
+1(
+1-
+#92000
+0-
+#94000
+0"
+0%
+0*
+0(
+b1 1
+1-
+#96000
+0-
+#98000
+1*
+b1010 &
+b1010 7
+b1010 .
+b1010 9
+b1010 >
+b1 C
+1-
+#100000
+0-
+#102000
+1"
+1%
+1(
+1-
+#104000
+0-
+#106000
+0"
+0%
+0*
+0(
+b10 1
+1-
+#108000
+0-
+#110000
+1*
+b10100 &
+b10100 7
+b10100 .
+b10100 9
+b10100 >
+b10 C
+1-
+#112000
+0-
+#114000
+1"
+1%
+1(
+1-
+#116000
+0-
+#118000
+0"
+0%
+0*
+0(
+b11 1
+1-
+#120000
+0-
+#122000
+1*
+b11110 &
+b11110 7
+b11110 .
+b11110 9
+b11110 >
+b11 C
+1-
+#124000
+0-
+#126000
+1"
+1%
+1(
+1-
+#128000
+0-
+#130000
+0"
+0%
+0*
+0(
+b100 1
+1-
+#132000
+0-
+#134000
+1*
+b101000 &
+b101000 7
+b101000 .
+b101000 9
+b101000 >
+b100 C
+1-
+#136000
+0-
+#138000
+1"
+1%
+1(
+1-
+#140000
+0-
+#142000
+0"
+0%
+0*
+0(
+b101 1
+1-
+#144000
+0-
+#146000
+b10 2
+b10 B
+b10 5
+b101 C
+1-
+#148000
+0-
+#150000
+1-
+#152000
+0-
+#154000
+1-
+#156000
+1$
+1*
+b11111010 &
+b11111010 7
+b11111010 .
+b11111010 9
+1/
+0-
+b11111010 >
+b0 1
+b10 ;
+#158000
+1%
+1(
+1-
+#160000
+0-
+#162000
+b11111011 &
+b11111011 7
+b11111011 .
+b11111011 9
+10
+b11111011 >
+b11 ;
+b11 5
+b1 4
+b1 3
+b0 1
+1-
+#164000
+0-
+#166000
+1-
+#168000
+0-
+#170000
+b100 2
+b100 ;
+b100 5
+b1 1
+1-
+#172000
+0-
+#174000
+1-
+#176000
+0-
+#178000
+1-
+#180000
+b11111100 #
+b11111100 :
+b11111100 +
+b11111100 8
+1,
+b1 '
+b1 6
+0/
+0-
+b11111100 D
+b0 1
+b100 <
+#182000
+1-
+#184000
+0-
+#186000
+b11111101 #
+b11111101 :
+b11111101 +
+b11111101 8
+1/
+b11111101 D
+b101 <
+b101 5
+b0 1
+1-
+#188000
+0-
+#190000
+1-
+#192000
+0-
+#194000
+b110 2
+b110 <
+b110 5
+b1 1
+1-
+#196000
+0-
+#198000
+1-
+#200000
+0-
+#202000
+1-
+#204000
+0$
+0%
+0/
+00
+0*
+0(
+0-
+#206000
+1-
+#208000
+0-
+#210000
+1-
+#212000
+0-
+#214000
+1-
